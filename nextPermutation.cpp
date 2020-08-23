@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+//O(N) Time and O(1) Space
     void nextPermutation(vector<int>& nums) {
         
     int flag=-1,m=0,k=0;
@@ -14,7 +14,7 @@ using namespace std;
 	}
 
 	if(flag==-1){
-		sort(nums.begin(),nums.end());
+		reverse(nums.begin(),nums.end());
 		return;
 	}
 
@@ -28,7 +28,7 @@ using namespace std;
 	}
 	swap(nums[flag],nums[m]);
 
-	sort(nums.begin()+flag+1,nums.end());}
+	reverse(nums.begin()+flag+1,nums.end());}
 
 
 
