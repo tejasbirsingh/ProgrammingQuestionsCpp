@@ -1,5 +1,5 @@
  bool canJump(vector<int>& nums) {
-       
+//        O(N) Time and Constant Space
         int n = nums.size();
         int maxreach = 0;
         
